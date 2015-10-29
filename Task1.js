@@ -1,3 +1,4 @@
 function getMinDay(travelledKM, totalKM, speed) {
-    return (totalKM-travelledKM)/speed;
+    var result = (totalKM-travelledKM)/speed;
+    return Math.ceil(result);
 }
