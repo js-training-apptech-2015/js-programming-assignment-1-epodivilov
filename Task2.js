@@ -12,7 +12,6 @@ function maxXOR (startInterval, endInterval) {
                     currentXOR = i ^ j;
                 }
 
-                console.log("i= " + i + ", j= " + j + ", XOR= " + currentXOR);
                 if (maxXOR < currentXOR) {
                     maxXOR = currentXOR;
                 }
@@ -22,4 +21,3 @@ function maxXOR (startInterval, endInterval) {
     return maxXOR;
 }
 
-console.log(maxXOR(-1,5));
