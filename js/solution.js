@@ -1,3 +1,8 @@
+function solution1(travelledKM, totalKM, speed) {
+    var result = (totalKM-travelledKM)/speed;
+    return Math.ceil(result);
+}
+
 function solution2 (startInterval, endInterval) {
     var count = 0, max = 0, neg = 1;
     if (startInterval < 0 || endInterval < 0) {
@@ -19,3 +24,4 @@ function solution2 (startInterval, endInterval) {
 
     return ((1 << max) - 1)*neg;
 }
+
